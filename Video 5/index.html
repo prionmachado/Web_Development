@@ -1,0 +1,133 @@
+<!-- form and input tags -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">"SIGMA PRION FORM"</h1>
+
+    <form action="post">
+
+        <div>
+            <label for="username"> Name:</label>
+            <input type="text" name="username" placeholder="Enter your username" id="username" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="pass"> Password:</label>
+            <input type="password" name="password" id="pass" placeholder="Enter your password" required>
+        </div>
+        <br>
+
+        <div>
+            <label>Enter your Gender:</label><br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <br>
+
+        <div>
+            <label>In which sports you are interested in:</label><br>
+            <label for="1">Football</label>
+            <input type="checkbox" id="1" name="F">
+            <br>
+            <label for="2">Cricket</label>
+            <input type="checkbox" id="2" name="C">
+            <br>
+            <label for="3">Badminton</label>
+            <input type="checkbox" id="3" name="B">
+        </div>
+        <br>
+
+        <div>
+            <label for="num">Number:</label>
+            <input type="number" name="number" id="num" value="num1" placeholder="Enter phone number:" required>
+        </div>
+        <br>
+
+        <div>
+            <textarea name="yourself" rows="4" cols="50">Tell us something about yourself...
+            </textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="fruit">Choose:</label>
+            <select name="fruits" id="fruit">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="lev">Choose your level:</label>
+            <select name="level" id="lev">
+                <option value="Student">Student</option>
+                <option value="beginner">Beginner</option>
+                <option value="Inter">Intermediate</option>
+                <option value="adv">Advanced</option>
+                <option value="expert">Expert</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time" placeholder="Enter time:" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="colour">Colour:</label>
+            <input type="color" name="colour" id="colour" placeholder="Enter your colour:" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="rol">Enter your roll no.</label>
+            <input type="range" min="1" max="100" name="number" id="rol" value="Roll no">
+        </div>
+        <br>
+
+        <input type="submit" value="Send">
+        <!-- <button type="submit">Submit</button> -->
+        <!-- <button type="button">Hello</button> -->
+        <button type="reset">Reset</button>
+        <button type="menu">Menu</button>
+
+    </form>
+    <br>
+    <hr>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="Search on Youtube" name="search_query"/>
+        <button>Search</button>
+    </form>
+   
+    <br>
+    <hr>
+
+    <form action="https://www.google.com/search?">
+        <input type="text" placeholder="Search on Google" name="q" />
+        <button>Search</button>
+    </form>
+    <br>
+    <hr>
+
+    <form action="https://hianime.to/search?">
+        <input type="text" placeholder="Search on hianime" name="keyword" />
+        <button>Search</button>
+    </form>
+
+</body>
+
+</html> 
