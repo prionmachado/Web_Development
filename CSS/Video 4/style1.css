@@ -1,0 +1,27 @@
+#outer{
+    height: 200px;
+    width: 70px;
+    background-color: black;
+    border-radius: 15px;
+    border:10px solid orange;
+} 
+
+.inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+} 
+
+#first{
+    background-color: red;
+}
+
+#sec{
+    background-color: yellow;
+}
+
+#third{
+    background-color: green;
+} 

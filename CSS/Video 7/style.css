@@ -1,0 +1,32 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: red;
+    display: grid;
+    /* grid-template-rows: 50px 50px 50px 50px 50px ;
+    grid-template-columns: 200px 200px 200px ; */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    place-items: center;
+}  
+
+.item {
+    width: 120px;
+    height: 60px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}  
+
+.one{
+    place-self: start;
+}
+/* .one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}  
+.three{
+    grid-row: 2/5;
+}  */

@@ -1,0 +1,14 @@
+h1 {
+    color: green;
+    background-color: red;
+}
+
+p {
+    color: blue;
+    background-color: #0f0;
+}
+
+button {
+    color: black;
+    background-color: rgb(231, 231, 39);
+}

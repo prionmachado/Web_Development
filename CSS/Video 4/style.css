@@ -1,0 +1,26 @@
+div{
+    height: 200px;
+    width: 500px;
+    border: 10px solid red;
+    border-left: 10px dashed;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 25px;
+} 
+
+h1{
+    border-width: 5px;
+    border-color: olive;
+    border-style: dotted; 
+    padding: 5px;
+} 
+
+h2{
+    display: inline;
+}
+
+span{
+    display: block;
+}  
+
+/* watch css part 3 video 11 */

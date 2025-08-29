@@ -1,0 +1,46 @@
+/* Question 1 */
+h1 {
+    color: pink;
+}
+
+#greet {
+    color: yellow;
+}
+
+.myclass {
+    color: brown;
+}
+
+/* Question 2 */
+div p {
+    background-color: black;
+}
+
+.para {
+    background-color: blue;
+}
+
+p {
+    background-color: green;
+}
+
+/* Question 3 */
+div.greetDiv .greetc {
+    color: green;
+}
+
+.greetDiv p.greetc {
+    color: blue;
+}
+
+.greetDiv .greetc {
+    color: red;
+} 
+
+h3{
+    color: purple;
+}
+h3{
+    color: red;
+}
+

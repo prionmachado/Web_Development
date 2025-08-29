@@ -1,0 +1,79 @@
+/* Universal Selector */
+* {
+    background-color: white;
+}
+
+/* ID Selector */
+#login {
+    color: rgb(239, 239, 71);
+}
+
+/* Class Selector */
+.upvote {
+    background-color: green;
+    color: aliceblue;
+}
+
+/* #myId {
+    color: green;
+} */
+div[id=myId] {
+    color: green;
+} 
+
+/* descendent selector */
+p a{
+    color: yellow;
+    background-color:black ;
+} 
+
+/* Sibling Combinator */
+p+h3{
+    text-decoration: underline;
+}
+.upvote + button{
+    background-color: cornflowerblue;
+}
+
+/* Child Combinator */
+div > input{
+    background-color: darksalmon;
+} 
+
+/* Attribute Selector */
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color: green;
+} 
+/* input[type]{
+    property: value;
+} */
+
+/* Pseudo Class */
+
+button:hover{
+    background-color: black;
+    color: white;
+} 
+button:active{
+    background:hotpink ;
+}
+input[type="radio"]:checked + label{
+    color: red;
+} 
+.post:nth-of-type(1n){ 
+    background-color: red;
+} 
+
+/* Pseudo Element */
+h1::first-letter{
+    color: green;
+}
+p::first-line {
+    color: aqua;
+} 
+p::selection {
+    background-color: yellowgreen;
+} 
