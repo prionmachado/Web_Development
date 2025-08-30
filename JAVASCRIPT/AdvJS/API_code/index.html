@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about APIs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- https://catfact.ninja/fact -->
+    <!-- https://boredapi.com/api/activity -->
+    <!-- https://dog.ceo/api/breeds/image/random -->
+
+    <h1>Get Random Cat Facts</h1>
+    <button id="cat">Show new fact</button>
+    <p id="fact"></p>
+
+    <h1>Get Random Cute Dog Photos</h1>
+    <button id="dog">Show new image</button>
+    <img src="" id="image">
+
+    <h1>Get Random Jokes</h1>
+    <button id="joke">Tell me a joke</button>
+    <p id="funny"></p>
+
+    <h1>Get Your College</h1>
+    <input type="text" placeholder="Enter country" id="countryInput">
+    <input type="text" placeholder="Enter state" id="stateInput"><br><br>
+    <button id="result">Search your College</button>
+    <ul id="list">
+
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
