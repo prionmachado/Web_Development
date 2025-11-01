@@ -61,10 +61,9 @@ a {
   opacity: 1;
 }
 
-.nav-option i {
+.nav-option i { 
   font-size: 1.25rem;
-  ;
-}
+} 
 
 .nav-option a {
   font-size: 1rem;

@@ -9,7 +9,6 @@ btn.addEventListener("click", function() {
     box.style.backgroundColor = randomColor;
 
     console.log("Color updated");
-    console.log(this);
 });
 
 
