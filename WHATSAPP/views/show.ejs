@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h2>See your Chat</h2>
+    <br>
+    <p>From: <%= chat.from %>
+    </p>
+    <p>To: <%= chat.to %>
+    </p><br>
+    <p>
+        <b style="color: green;">Message:</b> <br>
+        <%= chat.message %>
+    </p><br><br>
+    <a href="/chats" class="btn" style="text-decoration: none;">Back</a>
+</body>
+
+</html>

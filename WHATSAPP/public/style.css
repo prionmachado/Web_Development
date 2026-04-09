@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+}
+
+.chats {
+    font-family: Arial, sans-serif;
+    background-color: rgb(26, 139, 237);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block; 
+    margin: 10px;
+} 
+
+.msg-box {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    width: 300px;
+} 
+
+.btn {
+    background-color: rgb(26, 139, 237);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px;
+} 
+
+.btn2 {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.actions {
+    display: flex;
+    gap: 6rem; /* replaces margin-left */
+    align-items: center;
+}
+
+.actions form {
+    margin: 0;
+}
