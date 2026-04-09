@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show all users</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <% for (let user of results) { %>
+            <tr>
+                <td>
+                    <%= user.id %>
+                </td>
+                <td>
+                    <%= user.username %>
+                </td>
+                <td>
+                    <%= user.email %>
+                </td>
+                <td>
+                    <form action="/users/<%= user.id %>/edit" method="GET">
+                        <button>Edit</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="/users/<%= user.id %>/delete" method="get">
+                        <button class="btn">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            <% }; %>
+    </table>
+    <form action="/users/new" method="get">
+        <button class="btn">Add new user</button>
+    </form>
+</body>
+
+</html>
