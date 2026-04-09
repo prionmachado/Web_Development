@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="post">
+        <h2>Here is your post in detail</h2>
+        <h3 class="user">@<%= post.username %></h3>
+        <h4 class="content"><%= post.content %></h4>
+        <img src="<%= post.image %>" alt="Post image" class="img">
+        <a href="http://localhost:8080/posts/<%= post.id %>/edit" class="btn">Edit</a>
+        <form action="/posts/<%=post.id%>?_method=DELETE" method="post" style="display: inline;">
+            <button class="btn">Delete post</button>
+        </form>
+    </div>
+</body> 
+
+</html>

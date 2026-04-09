@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Posts</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+    <h1>Insta Posts</h1>
+
+    <div class="post-container">
+        <% for(let post of posts) { %>
+            <div class="post">
+                <h2 class="user">@<%= post.username %>
+                </h2>
+                <h4 class="content">
+                    <%= post.content %>
+                </h4>
+                <img src="<%= post.image %>" alt="Post image" class="img">
+                <a href="http://localhost:8080/posts/<%= post.id %>" class="btn">See Post</a>
+                <a href="http://localhost:8080/posts/<%= post.id %>/edit" class="btn">Edit</a>
+                <form action="/posts/<%=post.id%>?_method=DELETE" method="post" style="display: inline;">
+                    <button class="btn">Delete</button>
+                </form>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <% } %>
+    </div>
+    <br><br>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="http://localhost:8080/posts/new" class="btn">Create new post</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".fa-heart").forEach(icon => {
+                icon.addEventListener("click", () => {
+                    icon.style.color = "red";
+                    setTimeout(() => icon.style.color = "", 5000);
+                });
+            });
+            document.querySelectorAll(".fa-bookmark").forEach(icon => {
+                icon.addEventListener("click", () => {
+                    icon.style.color = "blue";
+                    setTimeout(() => icon.style.color = "", 5000);
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

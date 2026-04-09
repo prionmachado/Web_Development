@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+}
+
+h2 {
+    margin-left: 10px;
+    color: #E1306C; 
+} 
+
+h1 {
+    color: #E1306C; 
+    padding: 12px;
+}
+
+.post {
+    background-color: blanchedalmond;
+    width: 20rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+} 
+
+.btn {
+    background-color: #E1306C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+} 
+
+.btn:hover {
+  background-color: #b02a55;
+} 
+
+.user {
+    color: #E1306C;
+    margin-left: 10px;
+}  
+.content {
+    margin-left: 10px;
+}  
+
+.img {
+    width:300px; 
+    border-radius:10px; 
+    border: 2px solid black;
+    margin-left: 10px;
+} 
+
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+} 
+
+.fa-heart, .fa-bookmark {
+  font-size: 22px;
+  margin: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.fa-heart.active {
+  color: red;
+}
+
+.fa-bookmark.active {
+  color: #007bff;
+}
+
+.post {
+  position: relative;
+}
+
+.fa-bookmark {
+  position: absolute;
+  right: 10px;
+} 
