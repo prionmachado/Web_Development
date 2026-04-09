@@ -1,0 +1,46 @@
+{
+    "cats": {
+        "name": "cats",
+        "followers": 25000,
+        "following": 300,
+        "posts": [
+            {
+                "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                "likes": 1500,
+                "comments": 17
+            },
+            {
+                "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                "likes": 312,
+                "comments": 19
+            },
+            {
+                "image": "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                "likes": 1065,
+                "comments": 200
+            }
+        ]
+    },
+    "dogs": {
+        "name": "dogs",
+        "followers": 15000,
+        "following": 100,
+        "posts": [
+            {
+                "image": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fHww&w=1000&q=80",
+                "likes": 500,
+                "comments": 7
+            },
+            {
+                "image": "https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                "likes": 312,
+                "comments": 19
+            },
+            {
+                "image": "https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                "likes": 1065,
+                "comments": 200
+            }
+        ]
+    }
+}
