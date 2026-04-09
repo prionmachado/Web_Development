@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SkillHub - Home</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">SkillHub</div>
+
+    <div class="navbar-center">
+      <input type="text" class="search-bar" placeholder="Search for courses..." />
+    </div>
+
+    <div class="navbar-icons">
+      <span title="Notifications">🔔</span>
+      <span title="Messages">💬</span>
+      <span title="Profile">👤</span>
+    </div>
+  </nav>
+ 
+  <hr class="divider" style="margin-top: 20px;">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-center">
+      <h1 id="welcome-heading" style="color: black; text-align: center; margin-bottom: 15px;"></h1>
+      <p>Level up your skills with top-rated tech courses created by experts and professionals.</p>
+    </div>
+  </section>
+
+  <!-- js  -->
+  <div style="text-align:center; margin-top: 30px;">
+    <button onclick="showBudgetCourses()" id="budget">💰 Show Budget Courses</button>
+  </div>
+
+  <!-- Divider -->
+  <hr class="divider" />
+
+  <!-- Trending Courses -->
+  <section class="course-section">
+
+    <div class="section-container">
+      <h2>🔥 Trending Courses</h2>
+
+      <div class="course-grid">
+        <a href="courseDescriptionPages/course1.html" class="course-card">
+          <img src="assets/ai&ml.webp" alt="AI ML Course">
+          <h3>AI & <br>Machine Learning</h3>
+          <p>Instructor: Dr. Andrew NG</p>
+          <p>₹3299 - 12 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course2.html" class="course-card">
+          <img src="assets/ds.webp" alt="Data Scientist">
+          <h3>Data Scientist <br>Course</h3>
+          <p>Instructor: Harvey Spector</p>
+          <p>₹5499 - 14 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course3.html" class="course-card">
+          <img src="assets/dl.webp" alt="Deep Learning">
+          <h3>Deep Learning <br>Specialization</h3>
+          <p>Instructor: Sneha Reddy</p>
+          <p>₹1399 - 10 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course4.html" class="course-card">
+          <img src="assets/ai_eng.jpg" alt="AI Engineer">
+          <h3>AI Engineer <br>Career Path</h3>
+          <p>Instructor: Robin Jones</p>
+          <p>₹1599 - 16 Weeks</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses For You -->
+  <section class="course-section">
+
+    <div class="section-container">
+      <h2>🎯 Courses For You</h2>
+
+      <div class="course-grid">
+        <a href="courseDescriptionPages/course5.html" class="course-card">
+          <img src="assets/fullstack.webp" alt="Web Dev">
+          <h3>Full Stack <br>Web Development</h3>
+          <p>Instructor: Angela Yu</p>
+          <p>₹999 - 12 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course6.html" class="course-card">
+          <img src="assets/appdev.webp" alt="App Dev">
+          <h3>App <br>Development</h3>
+          <p>Instructor: Angela Yu</p>
+          <p>₹899 - 10 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course7.html" class="course-card">
+          <img src="assets/cloud.webp" alt="Cloud">
+          <h3>Cloud <br>Fundamentals</h3>
+          <p>Instructor: Ravi Shetty</p>
+          <p>₹999 - 9 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course8.html" class="course-card">
+          <img src="assets/devOps.webp" alt="DevOps">
+          <h3>DevOps <br>Essentials</h3>
+          <p>Instructor: Johnson Williams</p>
+          <p>₹1099 - 8 Weeks</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programming Courses -->
+  <section class="course-section">
+
+    <div class="section-container">
+      <h2>👨‍💻 Programming Courses</h2>
+
+      <div class="course-grid">
+        <a href="courseDescriptionPages/course9.html" class="course-card">
+          <img src="assets/python.webp" alt="Python">
+          <h3>Python <br>Programming</h3>
+          <p>Instructor: Haris khan</p>
+          <p>₹499 - 6 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course10.html" class="course-card">
+          <img src="assets/java.webp" alt="Java">
+          <h3>Java for <br>Beginners</h3>
+          <p>Instructor: Jayden Fernandes </p>
+          <p>₹599 - 7 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course11.html" class="course-card">
+          <img src="assets/c.webp" alt="C">
+          <h3>C <br>Programming</h3>
+          <p>Instructor: Ravi Kumar</p>
+          <p>₹399 - 5 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course12.html" class="course-card">
+          <img src="assets/js.webp" alt="JavaScript">
+          <h3>JavaScript <br>Essentials</h3>
+          <p>Instructor: Sam Gomes</p>
+          <p>₹699 - 6 Weeks</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Courses -->
+  <section class="course-section">
+
+    <div class="section-container">
+      <h2>💡 Recommended Courses</h2>
+
+      <div class="course-grid">
+        <a href="courseDescriptionPages/course13.html" class="course-card">
+          <img src="assets/cyber.jpg" alt="Cybersecurity">
+          <h3>Cybersecurity <br>Fundamentals</h3>
+          <p>Instructor: Neha Singh</p>
+          <p>₹1099 - 8 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course14.html" class="course-card">
+          <img src="assets/design.webp" alt="UI/UX">
+          <h3>UI/UX <br>Design</h3>
+          <p>Instructor: Farhan Ali</p>
+          <p>₹799 - 6 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course15.html" class="course-card">
+          <img src="assets/dsa.webp" alt="DSA">
+          <h3>Data Structures <br>& Algorithms</h3>
+          <p>Instructor: Love Babbar</p>
+          <p>₹899 - 10 Weeks</p>
+        </a>
+
+        <a href="courseDescriptionPages/course16.html" class="course-card">
+          <img src="assets/git.webp" alt="Git">
+          <h3>Version Control <br> with Git</h3>
+          <p>Instructor: Akshay Jain</p>
+          <p>₹399 - 4 Weeks</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <hr class="divider" />
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SkillHub. All rights reserved.</p>
+    <a href="aboutus.html">About Us</a> |
+    <a href="contactus.html">Contact Us</a> |
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Help</a> |
+    <a href="#">Terms</a>
+  </footer>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    var courses = [
+      { title: "AI & Machine Learning", price: 1299, instructor: "Dr. Ankit Desai" },
+      { title: "Full Stack Web Dev", price: 999, instructor: "Karan Yadav" },
+      { title: "JavaScript Essentials", price: 699, instructor: "Mehul Shah" },
+      { title: "C Programming", price: 399, instructor: "Ravi Kumar" }
+    ];
+
+    function showBudgetCourses() {
+      var affordableList = "";
+      for (var i = 0; i < courses.length; i++) {
+        if (courses[i].price > 1000) continue;
+        affordableList += "• " + courses[i].title + " by " + courses[i].instructor + "\n";
+      }
+      alert("Courses under ₹1000:\n\n" + affordableList);
+    }
+
+    $(document).ready(function () {
+      var username = prompt("Hi there! What's your name?");
+      if (!username || username.trim() === "") {
+        username = "User";
+      }
+      $("#welcome-heading")
+        .text("Welcome Back, " + username + "!")
+        .hide()
+        .fadeIn(1500)
+        .animate({ fontSize: "65px" }, 800)
+        .animate({ fontSize: "50px" }, 600);
+
+      $(".hero-center p")
+        .css({ opacity: 0, marginTop: "50px" }) // start hidden + pushed down
+        .delay(2000) // wait for heading animation
+        .animate(
+          { opacity: 1, marginTop: "0px" }, // slide up to normal position
+          1200
+        );
+
+      $("#budget").click(function () {
+        $(this)
+          .fadeOut(200)
+          .fadeIn(200)
+          .fadeOut(200)
+          .fadeIn(200);
+      });
+    });
+
+  </script>
+
+</body>
+
+</html> 

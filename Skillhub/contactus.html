@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - SkillHub</title>
+  <link rel="stylesheet" href="contactus.css">
+</head>
+
+<body>
+  <h1>Contact Us</h1>
+
+  <p>Email: support@skillhub.com</p>
+  <p>Instagram: @skillhub_online</p>
+  <p>LinkedIn: SkillHub Learning</p>
+
+  <h3>Feedback Form</h3>
+  <form>
+    <label>Name:</label><br>
+    <input type="text" name="name" /><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="message"></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <nav>
+    <a href="homepage.html">Home</a> |
+    <a href="aboutus.html">About Us</a> |
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+  <br><br>
+
+  <p id="href"></p>
+  <p id="hostname"></p>
+  <p id="pathname"></p>
+  <p id="protocol"></p>
+  <p id="port"></p>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    document.getElementById("href").innerHTML = "Full URL: " + location.href;
+    document.getElementById("hostname").innerHTML =
+      "Hostname: " + location.hostname;
+    document.getElementById("pathname").innerHTML =
+      "Pathname: " + location.pathname;
+    document.getElementById("protocol").innerHTML =
+      "Protocol: " + location.protocol;
+    document.getElementById("port").innerHTML = "Port: " + location.port;
+
+    $(document).ready(function () {
+      $("h1").hide().fadeIn(1000);
+      $("p").hide().fadeIn(1500);
+      $("h3").hide().fadeIn(2000);
+      $("form").hide().fadeIn(2500);
+      $("nav").hide().fadeIn(3000);
+
+      // Button hover pulse effect
+      $("button").hover(
+        function () {
+          $(this).animate({ paddingLeft: "30px", paddingRight: "30px" }, 200);
+        },
+        function () {
+          $(this).animate({ paddingLeft: "20px", paddingRight: "20px" }, 200);
+        }
+      );
+
+      // Navigation link bounce effect on hover
+       $("nav a").hover(
+      function () {
+        $(this).animate({ fontSize: "20px", letterSpacing: "2px" }, 200);
+      },
+      function () {
+        $(this).animate({ fontSize: "16px", letterSpacing: "0px" }, 200);
+      }
+    );
+    });
+  </script>
+
+</body>
+
+</html> 

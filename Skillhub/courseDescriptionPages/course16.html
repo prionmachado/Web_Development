@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git & GitHub - Course Details</title>
+  <link rel="stylesheet" href="course.css">
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .course-details {
+            flex: 2;
+            animation: fadeSlide 1s ease-in-out;
+        }
+
+        .course-details h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .course-details p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        .course-image {
+            flex: 1;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .course-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .enroll-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #1976D2;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .enroll-btn:hover {
+            background: #125a9c;
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="course-container">
+    <div class="course-details">
+      <h1>Git & GitHub Essentials</h1>
+      <p><strong>Instructor:</strong> Akshay Jain</p>
+      <p><strong>Duration:</strong> 4 Weeks</p>
+      <p><strong>Price:</strong> ₹399</p>
+      <p><strong>Description:</strong> 
+        Learn how to manage your code with Git and collaborate using GitHub. 
+        This course covers version control basics, branching, merging, resolving conflicts, 
+        and working with repositories on GitHub.
+      </p>
+      <p><strong>What you'll learn:</strong></p>
+      <ul>
+        <li>Version control with Git</li>
+        <li>Creating & managing repositories</li>
+        <li>Branching & merging strategies</li>
+        <li>Collaboration using GitHub</li>
+        <li>Resolving conflicts & pull requests</li>
+      </ul>
+      <button class="enroll-btn">🚀 Enroll Now</button>
+    </div>
+
+    <div class="course-image">
+      <img src="git.webp" alt="Git & GitHub">
+    </div>
+  </div>
+
+  <script>
+    let btn = document.querySelector(".enroll-btn");
+    btn.addEventListener("click", function () {
+      alert("🎉 You successfully enrolled in Git & GitHub Essentials!");
+    });
+  </script>
+</body>
+</html>

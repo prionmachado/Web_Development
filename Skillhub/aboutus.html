@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - SkillHub</title>
+  <link rel="stylesheet" href="aboutus.css">
+</head>
+
+<body>
+  <h1>About SkillHub</h1>
+  <p>SkillHub is created by a passionate developer learning HTML.</p>
+  <p>Our mission is to make tech skills accessible to everyone.</p>
+
+  <nav>
+    <a href="homepage.html">Home</a> |
+    <a href="aboutus.html">About Us</a> |
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+  <br><br>
+
+  <p id="time"></p>
+  <p id="year"></p>
+  <p id="day"></p>
+  <p id="setday"></p>
+  <p id="date"></p>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <script>
+    function showDateTime() {
+      let d = new Date();
+      document.getElementById("time").innerHTML = "Current Time: " + d.toLocaleTimeString();
+      document.getElementById("year").innerHTML = "Year: " + d.getFullYear();
+      document.getElementById("day").innerHTML = "Day: " + d.toLocaleString('en-us', { weekday: 'long' });
+      document.getElementById("date").innerHTML = "Date: " + d.toDateString();
+    }
+
+    setInterval(showDateTime, 1000);
+    showDateTime();
+
+    $(document).ready(function () {
+      $("h1").hide().fadeIn(1000);
+      $("p").each(function (i) {
+        $(this).hide().delay(500 * (i + 1)).fadeIn(1000);
+      });
+
+      $("nav").hide().slideDown(1500);
+
+      $("nav a").hover(
+        function () {
+          $(this).animate({ fontSize: "23px", letterSpacing: "2px" }, 200);
+        },
+        function () {
+          $(this).animate({ fontSize: "18px", letterSpacing: "0px" }, 200);
+        }
+      );
+    });
+  </script>
+
+</body>
+
+</html> 
